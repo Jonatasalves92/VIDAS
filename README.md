@@ -1,2 +1,2 @@
 # VIDAS
-Projeto social de assistência a sociedade 
+PUnindo pessoas para transformar realidades com solidariedade e ação.
