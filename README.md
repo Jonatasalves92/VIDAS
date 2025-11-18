@@ -1,2 +1,2 @@
 # VIDAS
-PUnindo pessoas para transformar realidades com solidariedade e ação.
+Unindo pessoas para transformar realidades com solidariedade e ação.
