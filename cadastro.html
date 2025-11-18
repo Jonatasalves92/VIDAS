@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juntos pelo Bem — Cadastro</title>
+  <meta name="description" content="Formulário de cadastro de voluntários e apoiadores da ONG Juntos pelo Bem.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Principal">
+      <a href="index.html">Início</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="cadastro.html" aria-current="page">Cadastro</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <h1>Cadastro</h1>
+        <p>Preencha seus dados para participar como voluntário ou apoiador.</p>
+      </header>
+
+      <section aria-labelledby="formulario">
+        <h2 id="formulario">Seus dados</h2>
+
+        <form action="#" method="post" novalidate>
+          <fieldset>
+            <legend>Informações pessoais</legend>
+
+            <div class="field">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required minlength="3" autocomplete="name">
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seuemail@dominio.com" required autocomplete="email">
+            </div>
+
+            <div class="field">
+              <label for="cpf">CPF</label>
+              <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required inputmode="numeric" pattern="\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}">
+              <small class="hint">Formato: 000.000.000-00</small>
+            </div>
+
+            <div class="field">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required inputmode="tel" pattern="\\(\\d{2}\\) \\d{4,5}-\\d{4}">
+              <small class="hint">Ex.: (61) 99999-0000</small>
+            </div>
+
+            <div class="field">
+              <label for="nascimento">Data de nascimento</label>
+              <input type="date" id="nascimento" name="nascimento" required>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Endereço</legend>
+
+            <div class="field">
+              <label for="endereco">Endereço</label>
+              <input type="text" id="endereco" name="endereco" placeholder="Rua, número, complemento" required autocomplete="address-line1">
+            </div>
+
+            <div class="field">
+              <label for="cep">CEP</label>
+              <input type="text" id="cep" name="cep" placeholder="00000-000" required inputmode="numeric" pattern="\\d{5}-\\d{3}">
+              <small class="hint">Formato: 00000-000</small>
+            </div>
+
+            <div class="field">
+              <label for="cidade">Cidade</label>
+              <input type="text" id="cidade" name="cidade" placeholder="Cidade" required autocomplete="address-level2">
+            </div>
+
+            <div class="field">
+              <label for="estado">Estado</label>
+              <select id="estado" name="estado" required autocomplete="address-level1">
+                <option value="">Selecione</option>
+                <option>AC</option><option>AL</option><option>AP</option><option>AM</option>
+                <option>BA</option><option>CE</option><option>DF</option><option>ES</option>
+                <option>GO</option><option>MA</option><option>MT</option><option>MS</option>
+                <option>MG</option><option>PA</option><option>PB</option><option>PR</option>
+                <option>PE</option><option>PI</option><option>RJ</option><option>RN</option>
+                <option>RS</option><option>RO</option><option>RR</option><option>SC</option>
+                <option>SP</option><option>SE</option><option>TO</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Interesse</legend>
+
+            <div class="field">
+              <label for="area">Área de atuação</label>
+              <select id="area" name="area" required>
+                <option value="">Selecione</option>
+                <option value="educacao">Educação</option>
+                <option value="alimentacao">Segurança alimentar</option>
+                <option value="comunicacao">Comunicação</option>
+                <option value="logistica">Logística</option>
+                <option value="captacao">Captação de recursos</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="mensagem">Mensagem (opcional)</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Compartilhe interesses ou disponibilidade"></textarea>
+            </div>
+          </fieldset>
+
+          <div class="actions">
+            <button type="submit">Enviar cadastro</button>
+            <button type="reset">Limpar</button>
+          </div>
+        </form>
+      </section>
+
+      <section aria-labelledby="privacidade">
+        <h2 id="privacidade">Privacidade</h2>
+        <p>Seus dados são usados apenas para contato e organização do voluntariado.</p>
+        <figure>
+          <img src="assets/images/cadastro.webp" alt="Pessoa preenchendo formulário online" width="1200" height="675">
+        </figure>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <small>&copy; 2025 Juntos pelo Bem.</small>
+  </footer>
+  <script src="assets/js/scripts.js" defer></script>
+</body>
+</html>
